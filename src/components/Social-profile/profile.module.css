@@ -1,0 +1,41 @@
+.profile{
+    width: 450px;
+    height: 550px;
+    background-color: aliceblue;
+    margin-top: 20px;
+    margin-left: 20px;
+    border-radius: 15px;
+}
+.description{
+    text-align: center;
+    font-weight: bold;
+    font-size: 25px;
+   
+}
+
+
+.avatar{
+    height: 50%;
+    width: 50%;
+    border-radius: 50%;
+    border: 0.5px solid rgb(202, 193, 193);
+    margin-top: 30px;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+.stats{
+    display: flex;
+    flex-wrap: nowrap;
+justify-content: space-between;
+margin-top: 40px;
+font-size: 20px;
+list-style-type: none;
+margin-right: 25px;
+}
+.label{
+    display: block;
+    margin-bottom: 15px;
+}
+.name{
+    color: black;
+}
