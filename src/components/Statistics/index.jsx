@@ -26,6 +26,6 @@ index.defaultProps = {
 
 index.propTypes = {
   title: PropTypes.string,
-  stats: PropTypes.node,
+  //stats: PropTypes.node,
 };
 export default index;

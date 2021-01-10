@@ -1,5 +1,5 @@
 import React from 'react';
-import PropTypes from 'prop-types';
+//import PropTypes from 'prop-types';
 
 import Profile from './components/Social-profile';
 import user from './bd/user.json';
