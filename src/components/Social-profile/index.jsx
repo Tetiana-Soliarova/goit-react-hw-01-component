@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 
 import styles from './profile.module.css';
 
-const index = ({tag, name, location, avatar, stats }) => {
+const Profile = ({tag, name, location, avatar, stats }) => {
   return (
     <div className={styles.profile}>
       <div className={styles.description}>
@@ -34,18 +34,24 @@ const index = ({tag, name, location, avatar, stats }) => {
   );
 };
 
-index.propTypes = {
-  name: PropTypes.string,
-  tag: PropTypes.string,
-  location: PropTypes.string,
-  avatar: PropTypes.string,
-  stats: PropTypes.shape({
-      followers: PropTypes.number,
-      views: PropTypes.number,
-      likes: PropTypes.number,
-  }),
-    
+
+Profile.defaultProps = {
+  name: 'не указано',
+   
 };
 
 
-export default index;
+Profile.propTypes = {
+  name: PropTypes.string,
+  tag: PropTypes.string.isRequired,
+  location: PropTypes.string.isRequired,
+  avatar: PropTypes.string.isRequired,
+  stats:PropTypes.shape({
+      followers: PropTypes.number,
+      views: PropTypes.number,
+      likes: PropTypes.number,
+  }).isRequired,  
+};
+
+
+export default Profile;

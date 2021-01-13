@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 
 import styles from './statistics.module.css';
 
-function index({stats, title}) {
+function Statistic({stats, title}) {
   return (
     <section className={styles.statistics}>
       {title && <h2 className={styles.title}>{title}</h2>}
@@ -20,12 +20,21 @@ function index({stats, title}) {
   )
 }
 
-index.defaultProps = {
+Statistic.defaultProps = {
   title: '',
 }
 
-index.propTypes = {
+Statistic.propTypes = {
   title: PropTypes.string,
-  
+  stats: PropTypes.arrayOf(
+    PropTypes.shape({
+      id: PropTypes.string.isRequired,
+      label: PropTypes.string.isRequired,
+      percentage: PropTypes.number.isRequired,
+    }),
+  ),
 };
-export default index;
+
+
+
+export default Statistic;

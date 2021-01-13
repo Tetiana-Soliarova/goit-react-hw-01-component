@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import styles from './transaction.module.css';
 
-const index = ({items}) => {
+const Transaction = ({items}) => {
     return (
         <div>
             <table className={styles.transactionhistory}>
@@ -27,15 +27,17 @@ const index = ({items}) => {
     );
 };
 
-index.propTypes = {
+
+
+Transaction.propTypes = {
     items: PropTypes.arrayOf(
         PropTypes.shape({
             id: PropTypes.string.isRequired,   
-            type: PropTypes.string,   
-            ammount: PropTypes.number,
-            currency: PropTypes.string,
+            type: PropTypes.string.isRequired,   
+            ammount: PropTypes.number.isRequired,
+            currency: PropTypes.string.isRequired,
         }),
     ),  
 };
 
-export default index;
+export default Transaction;

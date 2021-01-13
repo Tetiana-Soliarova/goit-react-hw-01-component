@@ -2,16 +2,16 @@ import React from 'react';
 //import PropTypes from 'prop-types';
 
 import Profile from './components/Social-profile';
-import user from './bd/user.json';
+import user from './database/user.json';
 
 import Statistics from './components/Statistics/index';
-import statisticalData from './bd/statistical-data.json';
+import statisticalData from './database/statistical-data.json';
 
 import FriendList from './components/Friend/FriendList';
-import friends from './bd/friends.json';
+import friends from './database/friends.json';
 
 import TransactionHistory from './components/TransactionHistory';
-import transactions from './bd/transactions.json';
+import transactions from './database/transactions.json';
 
 
 
