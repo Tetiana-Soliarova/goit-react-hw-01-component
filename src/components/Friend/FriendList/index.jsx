@@ -25,8 +25,20 @@ FriendList.propTypes = {
         PropTypes.shape({
             id: PropTypes.number.isRequired,
         }),
-    ),
+    ).isRequired,
 }
 
+/*
+FriendList.defaultProp = {
+    friends: {},
+}
+
+FriendList.propTypes = {
+    friends: PropTypes.shape({
+            id: PropTypes.number.isRequired,
+        },
+    ),
+}
+*/
 
 export default FriendList;
